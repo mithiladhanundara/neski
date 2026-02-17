@@ -1,0 +1,86 @@
+.navbar {
+    position: fixed;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 900px;
+    padding: 0.75rem 2rem;
+    background-color: var(--color-surface-dark);
+    backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    border-radius: var(--border-radius-pill);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    /* Adjust height if necessary to fit the pill */
+    height: 40px;
+}
+
+.logoImage {
+    /* Ensure the image fits nicely */
+    object-fit: contain;
+    width: auto;
+    height: 100%;
+}
+
+
+.navLinks {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+    align-items: center;
+}
+
+.navLink {
+    color: var(--color-text-grey);
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.navLink:hover {
+    color: var(--color-text-light);
+}
+
+/* Active state simulation or specific link styling */
+.navLink.active {
+    color: var(--color-text-light);
+}
+
+.ctaButton {
+    background: var(--color-primary);
+    color: #000;
+    font-weight: 700;
+    padding: 0.6rem 1.5rem;
+    border-radius: var(--border-radius-button);
+    font-size: 0.9rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.ctaButton:hover {
+    transform: translateY(-1px);
+    background-color: var(--color-primary-hover);
+    box-shadow: 0 4px 15px rgba(178, 255, 89, 0.4);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        width: 95%;
+        top: 1rem;
+        padding: 0.75rem 1.5rem;
+    }
+
+    .navLinks {
+        display: none;
+    }
+}
