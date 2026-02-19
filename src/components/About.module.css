@@ -1,0 +1,55 @@
+.about {
+    padding: 8rem 2rem;
+    background-color: var(--color-background-dark);
+    text-align: center;
+    position: relative;
+    margin-top: -60px;
+    /* Overlap with Hero's rounded bottom if needed, or just sit below */
+    padding-top: 100px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    color: var(--color-text-light);
+}
+
+.content {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #CCCCCC;
+    /* Light grey for readability on black */
+    margin-bottom: 3rem;
+}
+
+.highlight {
+    display: inline-block;
+    color: var(--color-primary);
+    font-weight: 600;
+    position: relative;
+}
+
+.highlight::after {
+    /* Optional underline or glow */
+    content: none;
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 6rem 1rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .content {
+        font-size: 1.1rem;
+    }
+}
