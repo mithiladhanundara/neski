@@ -1,0 +1,251 @@
+.heroSection {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 0;
+    padding-top: 1rem;
+    /* Small gap at top of screen */
+    margin-bottom: 0;
+    /* Remove bottom margin to flush with next section */
+    background-color: var(--white);
+    /* Distinct white background for this section */
+    padding-bottom: 4rem;
+    /* Add bottom spacing inside the white section */
+}
+
+.heroCard {
+    background: var(--hero-gradient);
+    border-radius: 40px;
+    width: 100%;
+    max-width: 98%;
+    /* Smaller side gaps as requested */
+    margin: 6rem auto 0;
+    /* Push down below the absolute Navbar (Nav is ~80px/5rem) */
+    padding: 4rem 2rem 0;
+    /* Restore normal inner padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: visible;
+    /* Allow widgets to float if needed, but contained is safer */
+}
+
+.content {
+    max-width: 800px;
+    margin-bottom: 3rem;
+    z-index: 10;
+}
+
+.headline {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--text-heading);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.03em;
+}
+
+.highlight {
+    position: relative;
+    display: inline-block;
+}
+
+.highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    background-color: rgba(143, 158, 133, 0.3);
+    /* --accent-soft */
+    z-index: -1;
+    border-radius: 4px;
+}
+
+.subheadline {
+    font-size: 1.125rem;
+    color: var(--text-heading);
+    opacity: 0.8;
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.ctaGroup {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* Visuals Container */
+.visuals {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* Central Mobile Mockup */
+.mobile {
+    position: relative;
+    width: 260px;
+    height: 520px;
+    /* Taller */
+    background: #222;
+    border-radius: 40px;
+    border: 10px solid #222;
+    box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.3);
+    z-index: 5;
+    overflow: hidden;
+    transform: translateY(40px);
+    /* Push down slightly */
+}
+
+.notch {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 24px;
+    background: #222;
+    border-radius: 0 0 16px 16px;
+    z-index: 6;
+}
+
+.mobileScreen {
+    width: 100%;
+    height: 100%;
+    background: #f6f6f4;
+    border-radius: 30px;
+    overflow: hidden;
+    padding-top: 40px;
+    position: relative;
+}
+
+.mobileHeader {
+    height: 50px;
+    background: var(--btn-primary);
+    margin: 0 16px 16px;
+    border-radius: 12px;
+}
+
+.mobileCard {
+    height: 80px;
+    background: #fff;
+    margin: 0 16px 12px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.floatingBtn {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    width: 50px;
+    height: 50px;
+    background: var(--btn-primary);
+    border-radius: 50%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Floating Widgets */
+.widget {
+    position: absolute;
+    background: var(--white);
+    padding: 1.25rem;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    z-index: 6;
+    animation: float 6s ease-in-out infinite;
+}
+
+.widgetLeft {
+    top: 30%;
+    left: -20px;
+    transform: rotate(-5deg);
+}
+
+.widgetRight {
+    top: 40%;
+    right: -20px;
+    transform: rotate(5deg);
+    animation-delay: 1s;
+}
+
+.widgetLabel {
+    font-size: 0.75rem;
+    color: var(--text-heading);
+    opacity: 0.6;
+    margin-bottom: 0.25rem;
+}
+
+.widgetValue {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-heading);
+}
+
+.widgetTag {
+    font-size: 0.75rem;
+    background: rgba(143, 158, 133, 0.2);
+    color: var(--btn-primary);
+    padding: 0.2rem 0.5rem;
+    border-radius: 10px;
+    align-self: flex-start;
+    margin-top: 0.25rem;
+}
+
+.miniChart {
+    width: 40px;
+    height: 4px;
+    background: var(--btn-primary);
+    border-radius: 2px;
+    margin-top: 0.5rem;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(var(--rot));
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(var(--rot));
+    }
+}
+
+@media (min-width: 768px) {
+    .heroSection {
+        padding: 0 2rem;
+    }
+
+    .heroCard {
+        padding: 6rem 4rem 0;
+    }
+
+    .headline {
+        font-size: 4rem;
+    }
+
+    .widgetLeft {
+        left: 10%;
+        --rot: -5deg;
+    }
+
+    .widgetRight {
+        right: 10%;
+        --rot: 5deg;
+    }
+}

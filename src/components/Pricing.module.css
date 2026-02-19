@@ -1,0 +1,133 @@
+.pricingSection {
+    background-color: var(--white);
+}
+
+.header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 4rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: var(--text-heading);
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.125rem;
+    color: var(--text-heading);
+    opacity: 0.8;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+    /* Center Vertically if heights differ */
+}
+
+.card {
+    background: var(--bg-primary);
+    /* #f6f6f4 */
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    position: relative;
+    border: 1px solid transparent;
+    /* default border */
+    display: flex;
+    flex-direction: column;
+}
+
+.popular {
+    background: #fbfbfb;
+    /* slightly lighter or different? */
+    border: 2px solid var(--btn-primary);
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px -10px rgba(125, 140, 121, 0.2);
+    z-index: 10;
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--btn-primary);
+    color: var(--white);
+    padding: 0.25rem 1rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.tierName {
+    font-size: 1.5rem;
+    color: var(--text-heading);
+    margin-bottom: 0.5rem;
+}
+
+.tierLimit {
+    font-size: 0.875rem;
+    color: var(--text-heading);
+    opacity: 0.7;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.priceRow {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 2rem;
+}
+
+.price {
+    font-size: 2rem;
+    /* LKR values are long, keep it manageable */
+    font-weight: 700;
+    color: var(--text-heading);
+}
+
+.period {
+    font-size: 1rem;
+    color: var(--text-heading);
+    opacity: 0.6;
+    margin-left: 0.25rem;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+    flex: 1;
+    /* push button down */
+}
+
+.features li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-heading);
+    font-size: 0.95rem;
+}
+
+.check {
+    color: var(--btn-primary);
+    font-weight: bold;
+}
+
+.cta {
+    margin-top: auto;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

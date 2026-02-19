@@ -1,0 +1,80 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    /* Slightly rounded, modern but not full pill unless requested */
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid transparent;
+    font-family: var(--font-outfit);
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+/* Variants */
+.primary {
+    background-color: var(--btn-primary);
+    /* #7d8c79 */
+    color: var(--white);
+    box-shadow: 0 4px 6px -1px rgba(125, 140, 121, 0.2);
+}
+
+.primary:hover {
+    background-color: #6b7a67;
+    /* Darker shade of #7d8c79 */
+    box-shadow: 0 6px 8px -1px rgba(125, 140, 121, 0.3);
+}
+
+.secondary {
+    background-color: var(--accent-soft);
+    /* #c4cebc */
+    color: var(--text-heading);
+}
+
+.secondary:hover {
+    background-color: #b3bdab;
+}
+
+.outline {
+    background-color: transparent;
+    border-color: var(--text-heading);
+    color: var(--text-heading);
+}
+
+.outline:hover {
+    background-color: rgba(86, 97, 93, 0.05);
+    /* #56615d */
+}
+
+.ghost {
+    background-color: transparent;
+    color: var(--text-heading);
+}
+
+.ghost:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+/* Sizes */
+.sm {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+}
+
+.md {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+}
+
+.lg {
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+}
+
+.fullWidth {
+    width: 100%;
+}
