@@ -28,6 +28,9 @@ export default function Navbar() {
 
                 {/* CTA Button - Right Aligned */}
                 <div className={styles.navActions}>
+                    <a href="https://forms.gle/3zGogPRswFTmXrNo8" target="_blank" rel="noopener noreferrer" style={{ marginRight: '1rem' }}>
+                        <Button variant="outline" size="md">Fill and Win</Button>
+                    </a>
                     <Button variant="primary" size="md">Get 14 Days Free Trial</Button>
                 </div>
 
@@ -49,6 +52,9 @@ export default function Navbar() {
                     <Link href="/pricing" className={styles.mobileLink} onClick={() => setIsOpen(false)}>Pricing</Link>
                     <Link href="/about" className={styles.mobileLink} onClick={() => setIsOpen(false)}>About</Link>
                     <div className={styles.mobileBtn}>
+                        <a href="https://forms.gle/3zGogPRswFTmXrNo8" target="_blank" rel="noopener noreferrer" style={{ display: 'block', marginBottom: '1rem' }}>
+                            <Button variant="outline" fullWidth onClick={() => setIsOpen(false)}>Fill and Win</Button>
+                        </a>
                         <Button variant="primary" fullWidth onClick={() => setIsOpen(false)}>Get 14 Days Free Trial</Button>
                     </div>
                 </div>
