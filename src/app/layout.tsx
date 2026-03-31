@@ -28,6 +28,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="https://ik.imagekit.io/qetpsnccs/Neski/Untitled%20design-12.png" sizes="any" />
+        <link rel="apple-touch-icon" href="https://ik.imagekit.io/qetpsnccs/Neski/Untitled%20design-12.png" />
+      </head>
       <body className={outfit.variable}>
         <SmoothScroll>
           {children}
