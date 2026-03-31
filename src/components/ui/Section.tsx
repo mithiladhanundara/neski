@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import styles from './Section.module.css';
 
 interface SectionProps {
@@ -8,17 +8,21 @@ interface SectionProps {
     background?: 'default' | 'white' | 'accent';
 }
 
-export default function Section({
+const Section = forwardRef<HTMLElement, SectionProps>(({
     children,
     id,
     className = '',
     background = 'default'
-}: SectionProps) {
+}, ref) => {
     return (
-        <section id={id} className={`${styles.section} ${styles[background]} ${className}`}>
+        <section id={id} ref={ref} className={`${styles.section} ${styles[background]} ${className}`}>
             <div className={styles.container}>
                 {children}
             </div>
         </section>
     );
-}
+});
+
+Section.displayName = 'Section';
+
+export default Section;

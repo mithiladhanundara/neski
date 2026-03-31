@@ -1,10 +1,36 @@
-import React from 'react';
+"use client";
+
+import React, { useEffect, useRef, useState } from 'react';
 import Section from './ui/Section';
 import styles from './Analytics.module.css';
 
 export default function Analytics() {
+    const sectionRef = useRef<HTMLElement>(null);
+    const [isRevealed, setIsRevealed] = useState(false);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsRevealed(true);
+                }
+            },
+            { threshold: 0.1 }
+        );
+
+        if (sectionRef.current) {
+            observer.observe(sectionRef.current);
+        }
+
+        return () => observer.disconnect();
+    }, []);
+
     return (
-        <Section id="analytics" className={styles.analyticsSection}>
+        <Section
+            id="analytics"
+            className={`${styles.analyticsSection} ${isRevealed ? styles.revealed : ''}`}
+            ref={sectionRef}
+        >
             <div className={styles.container}>
                 <div className={styles.textContent}>
                     <h2 className={styles.title}>Data-Driven Decisions made Simple.</h2>
@@ -35,13 +61,13 @@ export default function Analytics() {
                         <div className={styles.chartArea}>
                             {/* CSS Bar Chart */}
                             <div className={styles.barGroup}>
-                                <div className={styles.bar} style={{ height: '40%' }}></div>
-                                <div className={styles.bar} style={{ height: '60%' }}></div>
-                                <div className={styles.bar} style={{ height: '50%' }}></div>
-                                <div className={styles.bar} style={{ height: '75%' }}></div>
-                                <div className={styles.barActive} style={{ height: '90%' }}></div>
-                                <div className={styles.bar} style={{ height: '65%' }}></div>
-                                <div className={styles.bar} style={{ height: '55%' }}></div>
+                                <div className={styles.bar} style={{ '--final-height': '40%' } as React.CSSProperties}></div>
+                                <div className={styles.bar} style={{ '--final-height': '60%' } as React.CSSProperties}></div>
+                                <div className={styles.bar} style={{ '--final-height': '50%' } as React.CSSProperties}></div>
+                                <div className={styles.bar} style={{ '--final-height': '75%' } as React.CSSProperties}></div>
+                                <div className={styles.barActive} style={{ '--final-height': '90%' } as React.CSSProperties}></div>
+                                <div className={styles.bar} style={{ '--final-height': '65%' } as React.CSSProperties}></div>
+                                <div className={styles.bar} style={{ '--final-height': '55%' } as React.CSSProperties}></div>
                             </div>
                         </div>
                     </div>
