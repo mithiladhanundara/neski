@@ -15,10 +15,6 @@ export default function Footer() {
                         <p className={styles.tagline}>
                             Transforming rental management with simplicity and trust.
                         </p>
-                        <div className={styles.oceanIq}>
-                            <span>Powered by</span>
-                            <a href="https://www.oceaniq.tech" target="_blank" rel="noopener noreferrer" className={styles.oceanName}>OceanIQ</a>
-                        </div>
                     </div>
 
                     <div className={styles.linksCol}>
@@ -46,7 +42,7 @@ export default function Footer() {
 
                 <div className={styles.bottomSection}>
                     <div className={styles.copyright}>
-                        &copy; {new Date().getFullYear()} OceanIQ. All rights reserved.
+                        &copy; {new Date().getFullYear()} Neski. All rights reserved.
                     </div>
 
                 </div>
