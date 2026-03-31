@@ -45,7 +45,12 @@ export const blogPosts: BlogPostDetail[] = [
             "https://ik.imagekit.io/qetpsnccs/Neski/WhatsApp%20Image%202026-03-31%20at%2017.57.16.jpeg",
             "https://ik.imagekit.io/qetpsnccs/Neski/WhatsApp%20Image%202026-03-31%20at%2017.57.14.jpeg",
             "https://ik.imagekit.io/qetpsnccs/Neski/WhatsApp%20Image%202026-03-31%20at%2017.57.09.jpeg",
-            "https://ik.imagekit.io/qetpsnccs/Neski/WhatsApp%20Image%202026-03-31%20at%2017.57.11.jpeg"
+            "https://ik.imagekit.io/qetpsnccs/Neski/WhatsApp%20Image%202026-03-31%20at%2017.57.11.jpeg",
+            "https://ik.imagekit.io/qetpsnccs/Neski/WhatsApp%20Image%202026-03-31%20at%2018.30.57.jpeg",
+            "https://ik.imagekit.io/qetpsnccs/Neski/WhatsApp%20Image%202026-03-31%20at%2018.34.41-2.jpeg",
+            "https://ik.imagekit.io/qetpsnccs/Neski/WhatsApp%20Image%202026-03-31%20at%2018.34.40-2.jpeg",
+            "https://ik.imagekit.io/qetpsnccs/Neski/WhatsApp%20Image%202026-03-31%20at%2018.34.40.jpeg",
+            "https://ik.imagekit.io/qetpsnccs/Neski/WhatsApp%20Image%202026-03-31%20at%2018.34.39.jpeg"
         ],
         content: {
             overview: "An annual entrepreneurship competition hosted by the General Sir John Kotelawala Defence University (KDU).",
