@@ -20,11 +20,11 @@ export default function Contact() {
                     <form className={styles.form}>
                         <div className={styles.formGroup}>
                             <label className={styles.label} htmlFor="name">Full Name</label>
-                            <input type="text" id="name" className={styles.input} placeholder="John Doe" required />
+                            <input type="text" id="name" className={styles.input} placeholder="Ranjith Wimalasooriya" required />
                         </div>
                         <div className={styles.formGroup}>
                             <label className={styles.label} htmlFor="email">Email Address</label>
-                            <input type="email" id="email" className={styles.input} placeholder="john@example.com" required />
+                            <input type="email" id="email" className={styles.input} placeholder="ranjith@example.com" required />
                         </div>
                         <div className={styles.formGroup}>
                             <label className={styles.label} htmlFor="message">How can we help?</label>
