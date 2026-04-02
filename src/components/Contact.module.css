@@ -1,6 +1,6 @@
 .contactSection {
-    padding: 6rem 0;
     background-color: var(--white);
+    padding: 6rem 1.5rem;
 }
 
 .title {
@@ -113,21 +113,21 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .contactSection {
-        padding: 4rem 0;
+        padding: 4rem 1rem;
     }
 
     .title {
         font-size: 2.1rem;
         line-height: 1.15;
-        margin-bottom: 0.9rem;
+        margin-bottom: 0.85rem;
     }
 
     .subtitle {
-        font-size: 1.25rem;
+        font-size: 1.18rem;
         line-height: 1.55;
-        margin-bottom: 2.25rem;
+        margin-bottom: 2rem;
     }
 
     .grid {
@@ -137,10 +137,11 @@
     .formWrapper {
         padding: 1.25rem;
         border-radius: 14px;
+        width: 100%;
     }
 
     .formGroup {
-        margin-bottom: 1rem;
+        margin-bottom: 1.05rem;
     }
 
     .input,
@@ -150,11 +151,11 @@
     }
 
     .textarea {
-        min-height: 130px;
+        min-height: 125px;
     }
 
     .infoWrapper {
-        gap: 1.5rem;
+        gap: 1.35rem;
     }
 
     .infoItem {
@@ -170,5 +171,10 @@
 
     .socialWrap {
         margin-top: 0.25rem;
+    }
+
+    .socialTitle {
+        font-size: 1.05rem;
+        margin-bottom: 0.6rem;
     }
 }
