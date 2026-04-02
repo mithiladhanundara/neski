@@ -62,7 +62,9 @@ export default function Pricing() {
                         </ul>
 
                         <div className={styles.cta}>
-                            <Button variant={tier.variant} fullWidth>{tier.cta}</Button>
+                            <Button variant={tier.variant} fullWidth href="https://web.neski.lk">
+                                {tier.cta}
+                            </Button>
                         </div>
                     </div>
                 ))}

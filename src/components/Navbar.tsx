@@ -29,10 +29,17 @@ export default function Navbar() {
 
                 {/* CTA Button - Right Aligned */}
                 <div className={styles.navActions}>
-                    <a href="https://forms.gle/3zGogPRswFTmXrNo8" target="_blank" rel="noopener noreferrer" style={{ marginRight: '1rem' }}>
-                        <Button variant="outline" size="md">Fill and Win</Button>
-                    </a>
-                    <Button variant="primary" size="md">Get 45 Days Free Trial</Button>
+                    <Button
+                        variant="outline"
+                        size="md"
+                        href="https://web.neski.lk"
+                        style={{ marginRight: '1rem' }}
+                    >
+                        Fill and Win
+                    </Button>
+                    <Button variant="primary" size="md" href="https://web.neski.lk">
+                        Get 45 Days Free Trial
+                    </Button>
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -54,10 +61,18 @@ export default function Navbar() {
                     <Link href="/blog" className={styles.mobileLink} onClick={() => setIsOpen(false)}>Updates</Link>
                     <Link href="/contact" className={styles.mobileLink} onClick={() => setIsOpen(false)}>Contact</Link>
                     <div className={styles.mobileBtn}>
-                        <a href="https://forms.gle/3zGogPRswFTmXrNo8" target="_blank" rel="noopener noreferrer" style={{ display: 'block', marginBottom: '1rem' }}>
-                            <Button variant="outline" fullWidth onClick={() => setIsOpen(false)}>Fill and Win</Button>
-                        </a>
-                        <Button variant="primary" fullWidth onClick={() => setIsOpen(false)}>Get 45 Days Free Trial</Button>
+                        <Button
+                            variant="outline"
+                            fullWidth
+                            href="https://web.neski.lk"
+                            onClick={() => setIsOpen(false)}
+                            style={{ display: 'block', marginBottom: '1rem' }}
+                        >
+                            Fill and Win
+                        </Button>
+                        <Button variant="primary" fullWidth href="https://web.neski.lk" onClick={() => setIsOpen(false)}>
+                            Get 45 Days Free Trial
+                        </Button>
                     </div>
                 </div>
             </div>

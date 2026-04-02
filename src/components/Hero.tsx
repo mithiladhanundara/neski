@@ -36,7 +36,9 @@ export default function Hero() {
                     </h1>
                     
                     <div className={styles.heroCta}>
-                        <Button variant="primary" size="lg">Get Started</Button>
+                        <Button variant="primary" size="lg" href="https://web.neski.lk">
+                            Get Started
+                        </Button>
                     </div>
 
                     <p className={styles.subheadline}>
