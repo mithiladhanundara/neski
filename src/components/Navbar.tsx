@@ -38,7 +38,7 @@ export default function Navbar() {
                         Fill and Win
                     </Button>
                     <Button variant="primary" size="md" href="https://web.neski.lk">
-                        Get 45 Days Free Trial
+                        Get 90 Days Free Trial
                     </Button>
                 </div>
 
@@ -71,7 +71,7 @@ export default function Navbar() {
                             Fill and Win
                         </Button>
                         <Button variant="primary" fullWidth href="https://web.neski.lk" onClick={() => setIsOpen(false)}>
-                            Get 45 Days Free Trial
+                            Get 90 Days Free Trial
                         </Button>
                     </div>
                 </div>
